@@ -1,0 +1,48 @@
+<html>
+<head>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+  <style type="text/css">
+
+
+  .container .mix{
+    text-align: left;
+    background: #03899c;
+    margin-bottom: 2%;
+    display: none;
+  }
+  </style>
+</head>
+<body>
+
+<div class="controls">
+  <label>Filter:</label>
+  
+  <button class="filter" data-filter="all">All</button>
+  <button class="filter" data-filter=".category-1">Category 1</button>
+  <button class="filter" data-filter=".category-2">Category 2</button>
+  
+  <label>Sort:</label>
+  
+  <button class="sort" data-sort="myorder:asc">Asc</button>
+  <button class="sort" data-sort="myorder:desc">Desc</button>
+</div>
+<div id="Container" class="container">
+  <div class="mix category-1 category-2" data-myorder="1"><img src="/home/pc22/Desktop/anzeige.png"></div>
+  <div class="mix category-1 category-2" data-myorder="2"><img src="/home/pc22/Desktop/anzeige.png"></div>
+  <div class="mix category-1" data-myorder="3"><img src="/home/pc22/Desktop/anzeige.png"></div>
+  <div class="mix category-2" data-myorder="4"><img src="/home/pc22/Desktop/anzeige.png"></div>
+  <div class="mix category-1" data-myorder="5"><img src="/home/pc22/Desktop/anzeige.png"></div>
+  <div class="mix category-1" data-myorder="6"><img src="/home/pc22/Desktop/anzeige.png"></div>
+  <div class="mix category-2" data-myorder="7"><img src="/home/pc22/Desktop/anzeige.png"></div>
+  <div class="mix category-2" data-myorder="8"><img src="/home/pc22/Desktop/anzeige.png"></div>
+  
+  <div class="gap"></div>
+  <div class="gap"></div>
+</div>
+<script type="text/javascript">
+  $(function(){
+    $('#Container').mixItUp();
+  });
+</script>
+</body></html>
